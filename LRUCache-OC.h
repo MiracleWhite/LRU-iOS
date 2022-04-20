@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LRUCache_OC : NSObject
 
++(instancetype)shard;
+
 /// 创建/重置方法
 /// @param maxCount 最大缓存数量
 -(void)initOrResetWithMaxCount:(int)maxCount;
