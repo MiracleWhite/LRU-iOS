@@ -38,7 +38,7 @@
 /// @param maxCount 最大缓存数量
 -(void)initOrResetWithMaxCount:(int)maxCount{
     
-    self.maxCount = 0;
+    self.maxCount = maxCount;
     self.keysArr = [[NSMutableArray alloc]initWithCapacity:0];
     self.dataDic = [[NSMutableDictionary alloc]initWithCapacity:0];
 }
